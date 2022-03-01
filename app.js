@@ -14,7 +14,7 @@ document.getElementById('search-button').addEventListener('click', function name
 
 const displyPhone = (phones) => {
     let divContainer = document.getElementById('phone-container')
-    divContainer.innerText = '';
+    divContainer.textContent = '';
     for (let phone of phones.slice(0, 20)) {
         // console.log(phone);
         let div = document.createElement('div')
@@ -48,14 +48,18 @@ let showDispleDetails = (details) => {
     showDisplyDiv.textContent = '';
     showDisplyDiv.innerHTML = `
     <div class="card p-3" style="width: 18rem;">
-    <img src="${details.image}" class="card-img-top w-50" alt="...">
+    <img src="${details.image}" class="card-img-top w-50 mx-auto" alt="...">
     <div class="card-body">
       <p class="card-title">ChipSet: ${details.mainFeatures.chipSet}</hp>
       <p class="card-title">DisplaySize: ${details.mainFeatures.displaySize}</p>
       <p class="card-title">Demory: ${details.mainFeatures.memory}</p>
       <p class="card-text">ReleaseDate: ${details.releaseDate ? details.releaseDate : 'ReleseDate Not Found'}</p>
-      <p class="card-text">releaseDate: ${details.releaseDate ? details.releaseDate : 'ReleseDate Not Found'}</p>
-    </div>
-  </div>
-  `;
+      <p class="card-text">Sensors: ${details.mainFeatures.sensors}</p >
+    </div >
+  </div >
+    `;
+}
+
+let sensorShow = () => {
+
 }
