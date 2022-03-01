@@ -1,3 +1,11 @@
 body{
     background-color:rgba(107, 183, 245, 0.932);
 }
+
+#error-case{
+    display: none;
+    background-color: tomato;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+}
