@@ -55,9 +55,9 @@ let showDispleDetails = (details) => {
     <div class="card p-3" style="width: 18rem;">
     <img src="${details.image}" class="card-img-top w-50 mx-auto" alt="...">
     <div class="card-body">
-      <p class="card-title">ChipSet: ${details.mainFeatures.chipSet}</hp>
-      <p class="card-title">DisplaySize: ${details.mainFeatures.displaySize}</p>
-      <p class="card-title">Demory: ${details.mainFeatures.memory}</p>
+      <p class="card-title"><span class="fw-bold">ChipSet:</span> ${details.mainFeatures.chipSet}</hp>
+      <p class="card-title">${details.mainFeatures.displaySize}</p>
+      <p class="card-title">Demory:${details.mainFeatures.memory}</p>
       <p class="card-text">ReleaseDate: ${details.releaseDate ? details.releaseDate : 'ReleseDate Not Found'}</p>
       <p class="card-text">Sensors: ${details.mainFeatures.sensors}</p >
       <p class="card-text">Bluetooth: ${details.others.Bluetooth}</p >
