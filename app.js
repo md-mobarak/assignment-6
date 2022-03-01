@@ -20,7 +20,7 @@ const displyPhone = (phones) => {
         document.getElementById('error-case').style.display = 'none'
         let divContainer = document.getElementById('phone-container')
         divContainer.textContent = '';
-        for (let phone of phones.slice(1, 20)) {
+        for (let phone of phones.slice(0, 20)) {
             // console.log(phone);
             let div = document.createElement('div')
             div.classList.add('col')
@@ -69,8 +69,4 @@ let showDispleDetails = (details) => {
     </div >
   </div >
     `;
-}
-
-let sensorShow = () => {
-
 }
