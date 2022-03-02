@@ -12,6 +12,7 @@ document.getElementById('search-button').addEventListener('click', function name
 });
 
 const displyPhone = (phones) => {
+    console.log(phones);
 
     // error case 
     if (phones == false) {
@@ -29,8 +30,7 @@ const displyPhone = (phones) => {
         <div class="card-body">
             <h4 class="card-title">${phone.brand}</h4>
             <h5>${phone.phone_name}</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.</p>
+            <p class="card-text"></p>
             <button onclick="showDetails('${phone.slug}')" class="btn btn-info">Show Details</button>
         </div>
     </div>`
@@ -59,6 +59,8 @@ let showDispleDetails = (details) => {
           <p class="card-title"><span class="fw-bold">ChipSet:</span> ${details.mainFeatures.chipSet}</hp>
           <p>${details.mainFeatures.displaySize}</p>
           <p> <span class="fw-bold">Demory:</span>${details.mainFeatures.memory}</p>
+          <p> <span class="fw-bold">Storage:</span>${details.mainFeatures.storage}</p>
+          <p> <span class="fw-bold">DisplaySize:</span>${details.mainFeatures.displaySize}</p>
           <p> <span class="fw-bold"> ReleaseDate: </span> ${details.releaseDate ? details.releaseDate : 'ReleseDate Not Found'}</p>
           <p><span class="fw-bold">Sensors:</span> ${details.mainFeatures.sensors}</p >
           <p><span class="fw-bold">Bluetooth:</span> ${details.others?.Bluetooth ? details.others.Bluetooth : 'Not Found'}</p >
