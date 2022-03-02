@@ -60,12 +60,12 @@ let showDispleDetails = (details) => {
       <p class="card-title">Demory:${details.mainFeatures.memory}</p>
       <p class="card-text">ReleaseDate: ${details.releaseDate ? details.releaseDate : 'ReleseDate Not Found'}</p>
       <p class="card-text">Sensors: ${details.mainFeatures.sensors}</p >
-      <p class="card-text">Bluetooth: ${details.others.Bluetooth}</p >
-      <p class="card-text">GPS: ${details.others.GPS}</p >
-      <p class="card-text">NFC: ${details.others.NFC}</p >
-      <p class="card-text">Radio: ${details.others.Radio}</p >
-      <p class="card-text">USB: ${details.others.USB}</p >
-      <p class="card-text">WLAN: ${details.others.WLAN}</p >
+      <p>Bluetooth: ${details.others.Bluetooth ? details.others.Bluetooth : 'Not Found'}</p >
+      <p>GPS: ${details.others.GPS ? details.others.GPS : 'Not Found'}</p >
+      <p>NFC: ${details.others.NFC ? details.others.NFC : 'Not Found'}</p >
+      <p>Radio: ${details.others.Radio ? details.others.Radio : 'Not Found'}</p >
+      <p>USB: ${details.others.USB ? details.others.USB : 'Not Found'}</p >
+      <p>WLAN: ${details.others.WLAN ? details.others.WLAN : 'Not Found'}</p >
     </div >
   </div >
     `;
